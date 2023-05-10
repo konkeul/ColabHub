@@ -1,0 +1,37 @@
+Code Peer Review Templete
+
+코더 : 김영원
+리뷰어 : 김진홍
+
+PRT(PeerReviewTemplate)
+
+각 항목을 스스로 확인하고 체크하고 확인하여 작성한 코드에 적용하세요.
+
+[ o ] 코드가 정상적으로 동작하고 주어진 문제를 해결했나요?
+[ o ] 주석을 보고 작성자의 코드가 이해되었나요?
+[ o ] 코드가 에러를 유발할 가능성이 있나요?
+[ o ] 코드 작성자가 코드를 제대로 이해하고 작성했나요? (직접 인터뷰해보기)
+[ o ] 코드가 간결한가요?
+
+
+import collections counter # 숫자 카운트 명령어 불러오기
+
+text2 = re.sub(r"[^\uAC00-\uD7A30-9a-zA-Z\s]", "", text)  # 특수문자 제거 
+lowtext = text2.lower() # 소문자로 변환 해주기
+words = lowtext.split() # 공백 기준 분할
+
+
+
+wordlist = list(zip(words, words[1:])) # 단어 쌍 딕셔너리 만들어서 주기
+
+wordcount = Counter(wordlist) # 카운터를 이용하여 세어주는 변수 생성
+
+maxword = max(wordcount, key=wordcount.get) # 많이 나오는 단어
+maxword_v = max(wordcount.values()) 
+print(maxword, maxword_v) 
+print(wordcount) # 나온 횟수 출력
+
+comment
+
+문제에 대한 코드를 잘 작성해주셨습니다. 간결할 뿐만 아니라 코드의 작동 또한 잘 되어서 많이 배웠습니다.
+나아아아아중에라도 혹시 같이 프로젝트를 진행한다면 발목을 잡을 것만 같아 많이 노력해야겠다는 동기를 부여 받은거 같아요 잘 할수 있을지는 모르겠지만 많은 도움과 생각을 받았습니다 감사합니다..
